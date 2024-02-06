@@ -1,0 +1,27 @@
+.gnb {
+  @include flexbox(between);
+  padding: 1.8vw;
+
+  &-logo {
+    img {
+      width: 1.5vw;
+    }
+  }
+
+  &-list {
+    ul {
+      @include flexbox(start);
+    }
+
+    li {
+      a {
+        padding: 0 8px;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
