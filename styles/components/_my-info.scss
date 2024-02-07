@@ -8,8 +8,8 @@
 
   &-card {
     position: relative;
-    width: 280px;
-    height: 340px;
+    width: 240px;
+    height: 300px;
     overflow: hidden;
     border-radius: 1vw;
     background-color: #eee;
@@ -26,8 +26,37 @@
         background-size: 30vw;
         background-position: left center;
         transition: background 500ms ease-in-out;
-        cursor: pointer;
       }
+    }
+
+    &-name {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding: 1.2vw;
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+
+    &-icons {
+      @include column-flexbox(around);
+      position: absolute;
+      left: 22px;
+      bottom: 22px;
+      height: 80px;
+      z-index: 10;
+
+      i {
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &:hover h2,
+    &:hover i {
+      opacity: 1;
     }
   }
 }
