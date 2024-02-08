@@ -11,5 +11,12 @@
 @import './mixins/flexbox';
 
 @import './components/scroll';
+@import './components/my-info';
+@import './components/svg';
 
-@import './layouts/gnb'
+@import './layouts/gnb';
+
+.content2 {
+  margin-top: -8px;
+}
+

@@ -1,0 +1,11 @@
+.svg {
+  path {
+    fill: none;
+    stroke: $black;
+    stroke-width: 2px;
+  }
+
+  &-item2 {
+    margin-top: -8px;
+  }
+}
