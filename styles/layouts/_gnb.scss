@@ -1,6 +1,6 @@
 .gnb {
   @include flexbox(between);
-  padding: 20px 40px;
+  padding: 20px 60px;
 
   &-logo {
     img {
