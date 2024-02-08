@@ -1,62 +1,85 @@
 .my-info {
-  position: relative;
+  height: 50vh;
 
   &-box {
-    @include flexbox();
-    padding: 5vw;
+    @include flexbox(start);
+    height: 100%;
+    padding: 6vw;
   }
 
-  &-card {
-    position: relative;
-    width: 240px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 1vw;
-    background-color: #eee;
-    box-shadow: 0 4.3em 3.9em -3.7em #000;
+  // &-card {
+  //   position: relative;
+  //   width: 240px;
+  //   height: 300px;
+  //   overflow: hidden;
+  //   border-radius: 1vw;
+  //   background-color: #eee;
+  //   box-shadow: 0 4.3em 3.9em -3.7em #000;
     
-    &-item {
-      height: 100%;
-      background-image: url('../../assets/images/emoji.png');
-      background-size: 20vw;
-      background-repeat: no-repeat;
-      background-position: center;
+  //   &-item {
+  //     height: 100%;
+  //     background-image: url('../../assets/images/emoji.png');
+  //     background-size: 20vw;
+  //     background-repeat: no-repeat;
+  //     background-position: center;
 
-      &:hover {
-        background-size: 30vw;
-        background-position: left center;
-        transition: background 500ms ease-in-out;
-      }
-    }
+  //     &:hover {
+  //       background-size: 30vw;
+  //       background-position: left center;
+  //       transition: background 500ms ease-in-out;
+  //     }
+  //   }
 
-    &-name {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      padding: 1.2vw;
-      opacity: 0;
-      transition: opacity 300ms ease-in-out;
-    }
+  //   &-name {
+  //     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //     padding: 1.2vw;
+  //     opacity: 0;
+  //     transition: opacity 300ms ease-in-out;
+  //   }
 
-    &-icons {
-      @include column-flexbox(around);
-      position: absolute;
-      left: 22px;
-      bottom: 22px;
-      height: 80px;
-      z-index: 10;
+  //   &-icons {
+  //     @include column-flexbox(around);
+  //     position: absolute;
+  //     left: 22px;
+  //     bottom: 22px;
+  //     height: 80px;
+  //     z-index: 10;
 
-      i {
+  //     i {
+  //       opacity: 0;
+  //       transition: all 300ms ease-in-out;
+
+  //       &:hover {
+  //         transform: scale(1.2);
+  //       }
+  //     }
+  //   }
+
+  //   &:hover h2,
+  //   &:hover i {
+  //     opacity: 1;
+  //   }
+  // }
+
+  &-txt {
+    color: $primary;
+    // line-height: 36px;
+    // letter-spacing: 0.08vw;
+
+    &-main {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.3;
+
+      &-change {
         opacity: 0;
-        transition: all 300ms ease-in-out;
-
-        &:hover {
-          transform: scale(1.2);
-        }
+        transition: opacity 500ms;
       }
     }
 
-    &:hover h2,
-    &:hover i {
-      opacity: 1;
+    &-sub {
+      margin-top: 30px;
     }
+
   }
 }
