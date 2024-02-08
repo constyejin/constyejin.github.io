@@ -1,12 +1,12 @@
-const contnet = document.querySelector(".content2");
-const path1 = document.querySelector(".path2");
-const path1Length = path1.getTotalLength();
+const contnet = document.querySelector(".svg-item2");
+const path = document.querySelector(".svg-item2 path");
+const pathLength = path.getTotalLength();
 
-path1.style.strokeDasharray = path1Length;
-path1.style.strokeDashoffset = calcDashoffset(
+path.style.strokeDasharray = pathLength;
+path.style.strokeDashoffset = calcDashoffset(
   window.innerHeight * 0.8,
   contnet,
-  path1Length
+  pathLength
 );
 
 function calcDashoffset(scrollY, element, length) {
@@ -18,7 +18,7 @@ function calcDashoffset(scrollY, element, length) {
 
 function scrollHandler() {
   const scrollY = window.scrollY + window.innerHeight * 0.8;
-  path1.style.strokeDashoffset = calcDashoffset(scrollY, contnet, path1Length);
+  path.style.strokeDashoffset = calcDashoffset(scrollY, contnet, pathLength);
 }
 
 window.addEventListener("scroll", scrollHandler);
