@@ -1,4 +1,4 @@
-const changeText = document.getElementById("change-text");
+const changeText = document.querySelector(".my-info-txt-main-change")
 const texts = ["소통", "정보 전달", "디자인"];
 let index = 0;
 
