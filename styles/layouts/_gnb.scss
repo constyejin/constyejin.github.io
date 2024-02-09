@@ -4,7 +4,9 @@
 
   &-logo {
     img {
-      width: 20px;
+      width: 46px;
+      height: 46px;
+      object-fit: contain
     }
   }
 
@@ -24,6 +26,34 @@
 
         &:hover {
           color: $secondary;
+        }
+      }
+    }
+  }
+
+  @include responsive(M) {
+    padding: 20px 40px;
+
+    &-logo {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+
+    &-list {
+      li {
+        a {
+          padding: 0 12px;
+
+          i {
+            font-size: 18px;
+          }
+
+          &:hover {
+            color: $secondary;
+          }
         }
       }
     }
