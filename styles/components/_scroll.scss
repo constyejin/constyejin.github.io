@@ -50,6 +50,19 @@
       transform: skewY(-20deg);
     }
   }
+
+  @include responsive(M) {
+    top: 58%;
+    
+    &-txt {
+      font-size: 12px;
+    }
+
+    &-item {
+      width: 8px;
+      height: 2px;
+    }
+  }
 }
 
 @keyframes move-chevron {
