@@ -442,6 +442,14 @@ address {
       right: 0;
       width: 50%;
       transform: skewY(-20deg); }
+  @media screen and (max-width: 768px) {
+    .scroll-box {
+      top: 58%; }
+      .scroll-box-txt {
+        font-size: 12px; }
+      .scroll-box-item {
+        width: 8px;
+        height: 2px; } }
 
 @keyframes move-chevron {
   25% {
@@ -479,6 +487,15 @@ address {
         line-height: 1.8; }
         .my-info-txt-sub p:last-child {
           margin-top: 16px; }
+  @media screen and (max-width: 768px) {
+    .my-info {
+      height: 56vh; }
+      .my-info-box {
+        padding: 40px; }
+      .my-info-txt-main {
+        font-size: 36px; }
+      .my-info-txt-sub {
+        margin-top: 20px; } }
 
 .svg path {
   fill: none;
@@ -497,7 +514,9 @@ address {
   align-items: center;
   padding: 20px 60px; }
   .gnb-logo img {
-    width: 20px; }
+    width: 46px;
+    height: 46px;
+    object-fit: contain; }
   .gnb-list ul {
     display: flex;
     justify-content: flex-start;
@@ -509,3 +528,15 @@ address {
       font-size: 24px; }
     .gnb-list li a:hover {
       color: #8c8d96; }
+  @media screen and (max-width: 768px) {
+    .gnb {
+      padding: 20px 40px; }
+      .gnb-logo img {
+        width: 32px;
+        height: 32px; }
+      .gnb-list li a {
+        padding: 0 12px; }
+        .gnb-list li a i {
+          font-size: 18px; }
+        .gnb-list li a:hover {
+          color: #8c8d96; } }
