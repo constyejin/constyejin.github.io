@@ -444,7 +444,7 @@ address {
       transform: skewY(-20deg); }
   @media screen and (max-width: 768px) {
     .scroll-box {
-      top: 58%; }
+      top: 46vh; }
       .scroll-box-txt {
         font-size: 12px; }
       .scroll-box-item {
@@ -489,7 +489,8 @@ address {
           margin-top: 16px; }
   @media screen and (max-width: 768px) {
     .my-info {
-      height: 56vh; }
+      height: 40vh;
+      margin-bottom: 60px; }
       .my-info-box {
         padding: 40px; }
       .my-info-txt-main {
@@ -507,6 +508,12 @@ address {
 
 .svg-box {
   height: 200px; }
+
+@media screen and (max-width: 768px) {
+  .svg {
+    margin-top: 100px; }
+    .svg-box {
+      height: 300px; } }
 
 .gnb {
   display: flex;
