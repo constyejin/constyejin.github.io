@@ -35,7 +35,8 @@
   }
 
   @include responsive(M) {
-    height: 56vh;
+    height: 40vh;
+    margin-bottom: 60px;
 
     &-box {
       padding: 40px;
