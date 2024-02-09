@@ -12,4 +12,12 @@
   &-box {
     height: 200px;
   }
+
+  @include responsive(M) {
+    margin-top: 100px;
+    
+    &-box {
+      height: 300px;
+    }
+  }
 }
