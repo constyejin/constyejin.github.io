@@ -1,7 +1,7 @@
 .scroll-box {
   position: absolute;
+  bottom: -40px;
   left: 50%;
-  top: 50%;
   transform: translateX(-50%);
 
   &-txt {
@@ -11,6 +11,7 @@
 
   &-list {
     @include flexbox(center);
+    position: relative;
   }
 
   &-item {

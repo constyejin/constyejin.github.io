@@ -1,4 +1,6 @@
 .svg {
+  margin-top: 100px;
+
   path {
     fill: none;
     stroke: $black;
@@ -14,8 +16,6 @@
   }
 
   @include responsive(M) {
-    margin-top: 100px;
-    
     &-box {
       height: 300px;
     }

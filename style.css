@@ -407,8 +407,8 @@ address {
 
 .scroll-box {
   position: absolute;
+  bottom: -40px;
   left: 50%;
-  top: 50%;
   transform: translateX(-50%); }
   .scroll-box-txt {
     font-size: 16px;
@@ -416,7 +416,8 @@ address {
   .scroll-box-list {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
   .scroll-box-item {
     position: absolute;
     width: 12px;
@@ -465,6 +466,7 @@ address {
     transform: translateY(4.9vw) scale(0.5); } }
 
 .my-info {
+  position: relative;
   height: 50vh; }
   .my-info-box {
     display: flex;
@@ -498,20 +500,17 @@ address {
       .my-info-txt-sub {
         margin-top: 20px; } }
 
-.svg path {
-  fill: none;
-  stroke: #000;
-  stroke-width: 2px; }
-
-.svg-item2 {
-  margin-top: -8px; }
-
-.svg-box {
-  height: 200px; }
-
-@media screen and (max-width: 768px) {
-  .svg {
-    margin-top: 100px; }
+.svg {
+  margin-top: 100px; }
+  .svg path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px; }
+  .svg-item2 {
+    margin-top: -8px; }
+  .svg-box {
+    height: 200px; }
+  @media screen and (max-width: 768px) {
     .svg-box {
       height: 300px; } }
 
