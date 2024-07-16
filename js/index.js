@@ -13,6 +13,7 @@ function animateText() {
 
   setTimeout(animateText, 3000);
 }
+
 animateText();
 
 
